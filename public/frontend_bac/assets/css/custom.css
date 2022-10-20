@@ -1,0 +1,344 @@
+.m_t {
+    padding-top: 10px !important;
+}
+.text_center {
+    text-align: center !important;
+}
+.transparent_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.notCorrent a {
+    color: #ffffff !important;
+}
+.notCorrent a:hover {
+    color: #ffffff !important;
+}
+.cruise_content {
+    height: 150px;
+}
+.price_title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.home_content_box {
+    position: absolute;
+    top: 50%;
+    padding: 0px 50px;
+    transform: translateY(-50%);
+}
+.home_content_box h1 {
+    margin: 0;
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.feature_title {
+    margin-top: 0px !important;
+    color: #007e3f;
+}
+
+.about-one {
+    padding: 50px;
+}
+
+/* CHAAT BOX BUTTON */
+.chatbox {
+    width: 70px;
+    height: 70px;
+    background: var(--thm-primary);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    /* -webkit-transition: all 0.4s ease; */
+    /* transition: all 0.4s ease; */
+    border-radius: 50%;
+    /* transition: all 0.4s ease; */
+}
+.chatbox a {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 35px;
+}
+/* CHAAT BOX BUTTON */
+.chat_label {
+    padding-left: 0px;
+}
+
+.modalBox {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+}
+.chatModal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+}
+.chatModal .modalContent {
+    background: #fff;
+    width: 30%;
+    position: absolute;
+    bottom: -127px;
+    right: -164px;
+    transform: translate(-50%, -50%);
+    animation-name: modalZoom;
+    border-radius: 10px;
+    animation-duration: 0.3s;
+}
+.modalBox .modalContent {
+    background: #fff;
+    padding: 40px 40px 20px;
+    width: 30%;
+    position: absolute;
+    bottom: -25px;
+    right: -164px;
+    transform: translate(-50%, -50%);
+    animation-name: modalZoom;
+    border-radius: 10px;
+    animation-duration: 0.3s;
+}
+@media only screen and (max-width: 1199px) {
+    .modalBox .modalContent {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .modalBox .modalContent {
+        width: 80%;
+        padding: 40px 25px 20px;
+    }
+}
+.modalBox .close {
+    color: #000;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+.modalBox .close:hover,
+.modalBox .close:focus {
+    color: #e31c25;
+}
+.modalBox .formHolder h2 {
+    font-size: 24px;
+}
+@media only screen and (max-width: 767px) {
+    .modalBox .formHolder h2 {
+        font-size: 20px;
+    }
+}
+
+.modalBox .formHolder label {
+    display: block;
+}
+.modalBox .formHolder input[type="text"],
+.modalBox .formHolder input[type="password"] {
+    width: 100%;
+    margin: 0 0 10px;
+}
+.modalBox .formHolder .error {
+    color: #e31c25;
+    font-size: 14px;
+}
+
+/* CCCCCCCC */
+
+.chat-body {
+    height: 154px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+/* ---------------------- */
+
+.item-group-other {
+    flex-direction: row-reverse;
+    order: -1;
+    position: relative;
+    margin: 0px 0 30px 0;
+}
+
+.item-group-other img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.text-message-other {
+    background: #00a8ff;
+    padding: 20px;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.message-to {
+    position: relative;
+}
+.message-to img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.message-to i {
+    color: #08c708;
+    position: absolute;
+    top: 28px;
+    left: 37px;
+}
+
+.message-to h6 {
+    padding: 7px 0 0 6px;
+}
+
+.message-to p {
+    position: absolute;
+    top: 28px;
+    left: 58px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.time-track-you {
+    position: absolute;
+    font-size: 12px;
+    top: 64px;
+    left: 61px;
+}
+
+.time-track-other {
+    position: absolute;
+    font-size: 12px;
+    top: 64px;
+    text-align: right;
+    right: 62px;
+}
+
+.chat-wrapper .chat-body::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-wrapper .chat-body {
+    width: 100%;
+    overflow: auto;
+    padding: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+@media (max-width: 767px) {
+    .main-menu-wrapper__left {
+        float: left !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-slider {
+        height: 350px !important;
+    }
+    .swiper-wrapper {
+        height: 279px;
+    }
+    .about-one {
+        padding: 0px !important;
+    }
+    .swiper-pagination-bullets {
+        position: absolute;
+        top: 47%;
+        transform: translateY(20%);
+        left: 2%;
+    }
+    .main-slider .container {
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+        z-index: 30;
+    }
+    .about-page-video {
+        margin-top: 40px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-slider {
+        height: 261px !important;
+    }
+}
+/* card */
+.price_container {
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card_content {
+}
+.price_container:hover {
+    background: rgb(192, 215, 215);
+    transition: all 2s ease;
+}
+.price_card_title {
+    margin: 0;
+    font-weight: 700;
+    color: var(--thm-black);
+    font-size: 25px;
+}
+.price_wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 8px;
+}
+.price {
+    /* color: #1989fb; */
+    font-size: 30px;
+}
+.bookBtn {
+    display: flex;
+    justify-content: end;
+}
+.bookBtn a {
+    margin: 22px 0px;
+    background-color: #b3a258;
+    padding: 0px 23px;
+    color: #ffffff;
+}
+.group_booking {
+    display: flex;
+}
+.group_booking a {
+    margin: 22px 0px;
+    background-color: #b3a258;
+    padding: 10px 23px;
+    color: #ffffff;
+    border-radius: 4px;
+}

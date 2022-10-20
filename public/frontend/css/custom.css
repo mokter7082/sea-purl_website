@@ -1,0 +1,123 @@
+a {
+    text-decoration: none !important;
+}
+p {
+    margin: 0px !important;
+    text-align: justify !important;
+    font-size: 15px !important;
+}
+ul {
+    padding-left: 15px !important;
+}
+.custom_navbar {
+    background: #6aaf08;
+}
+.top_navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #ffffff;
+}
+.book_btn {
+    font-size: 15px;
+}
+.book_btn:hover {
+    color: #ffffff;
+    background-color: #2a6132;
+}
+.footer_area {
+    background-color: #222222;
+}
+.bottom_footer {
+    background-color: rgb(26, 26, 26);
+}
+.about_banner {
+    background-image: url("../img/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bangladesh_banner {
+    background-image: url("../img/bangladesh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ship_banner {
+    background-image: url("../img/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_heading {
+    font-size: 25px;
+    font-weight: 700;
+    color: #6aaf08;
+    margin-top: 20px;
+}
+.cruise_3_layout_img {
+    border: 2px solid gray;
+}
+.box {
+    box-shadow: 0 25px 70px rgb(0 0 0 / 7%);
+    height: 200px;
+    padding: 7px;
+    overflow: hidden;
+}
+.content {
+    height: 150px;
+    overflow: auto;
+}
+.group_booking_section {
+    margin-top: 20px;
+}
+.form_container {
+    width: 80%;
+    margin: auto;
+}
+.date_label {
+    position: absolute;
+    top: 14px;
+    left: 45%;
+}
+.downlod_pdf {
+    width: 240px;
+    margin: auto;
+    margin-top: 30px;
+}
+/* LIBRARY REFACTOR */
+.form-stripe .form-group {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid #ececec;
+}
+.section-title__title {
+    font-size: 26px !important;
+    font-weight: 600 !important;
+}
+.line_clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 18;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.read-more__text {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.torist_att_image {
+    height: 420px;
+    /* margin-top: 35px; */
+}
+.torist_att_image img {
+    height: 100% !important;
+    width: 100% !important;
+}
+.sondarban_map iframe {
+    width: 100% !important;
+}
+.video_thumnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

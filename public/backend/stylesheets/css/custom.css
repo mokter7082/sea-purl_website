@@ -1,0 +1,29 @@
+.form-area h3 {
+    margin-left: -15px !important;
+}
+.form-area .alert {
+    margin-left: -15px !important;
+}
+.dashboard-map {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_btn {
+    margin: 0px 5px;
+}
+.of_cover {
+    object-fit: cover;
+}
+.logo {
+    margin-top: 5px;
+}
+.description {
+    width: 150px;
+    overflow: hidden;
+}
