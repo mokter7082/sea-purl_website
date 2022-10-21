@@ -13,6 +13,7 @@ use App\Http\Controllers\HomeCruiseController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\WebsiteUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,8 @@ Route::get('/gallery', [FrontendController::class, 'Gallery'])->name('gallery');
 // extanal route
 Route::get('/group-booking', [FrontendController::class, 'groupBooking'])->name('group-booking');
 Route::get('/download-pdf', [FrontendController::class, 'downloadPdf'])->name('download-pdf');
-
+//STORE WEBSITE USER DATA
+Route::post('/group_booking_store', [WebsiteUserController::class, 'storeGroupBooking'])->name('group_booking_store');
 //ebd
 Route::post('/add-client',  [ClientController::class, 'addClient'])->name('add-client');
 Route::post('/store-message',  [ClientController::class, 'storeMessage'])->name('store-message');

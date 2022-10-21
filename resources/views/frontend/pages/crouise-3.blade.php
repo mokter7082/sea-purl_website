@@ -17,12 +17,13 @@
                     <div class="about-two__right">
                         <div class="wrapper">
                             <div class="section-title_ text-left_ ">
-                                <h2 class="text-center">The Cruiser vessel M.V. Sea Pearl Cruise 3 is a three-decked
-                                    vesse 360-degree</h2>
+                                <h2 class="text-center pb-1">The Cruiser vessel M.V. Sea Pearl Cruise 3 is a three-decked
+                                    vessel</h2>
                             </div>
                             <p>3 decked standard cruiser. The first deck has 8 air-conditioned/ non-air-conditioned cabins,
                                 the second deck has 14 air-conditioned I non-air-conditioned cabins, the sky deck has 3
-                                cabins, master sleeping room and is open for 360¡Æ panoramic view of beautiful the
+                                cabins, master sleeping room and is open for 360<span>&#176;</span> panoramic view of
+                                beautiful the
                                 magnificent Sundarbans .</p>
                         </div>
                         <div class="wrapper">
@@ -79,8 +80,8 @@
                         </div>
                         <section>
                             <div class="cruise_3_layout_img p-4 mt-4">
-                                <img class="w-100" src="{{ asset('public/frontend/img/itinary_banner.jpeg') }}"
-                                    alt="">
+                                <img style="height:700px;" class="w-100"
+                                    src="{{ asset('public/frontend/img/itinary_banner.jpeg') }}" alt="">
                             </div>
                         </section>
                         <div class="container-fluid pt-5">

@@ -20,7 +20,8 @@
                             </div>
                             <p>4 decked luxury cruiser. The under deck has one executive meeting lounge for twenty persons,
                                 the first deck has 12 air-conditioned deluxe/ super deluxe and family cabins,the second deck
-                                has 8 cabins and the sky deck has 1 premier cabin and is open for 360¡Æ panoramic view of
+                                has 8 cabins and the sky deck has 1 premier cabin and is open for 360<span>&#176;</span>
+                                panoramic view of
                                 beautiful the magnificent Sundarbans.</p>
                         </div>
                         <div class="wrapper">

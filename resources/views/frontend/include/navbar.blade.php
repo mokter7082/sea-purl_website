@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-lg-2 bg-secondary d-none d-lg-block text">
+    <div class="col-lg-2 bg-secondary d-none d-lg-block custom_navbar">
         <a href="{{ URL::to('/') }}"
             class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
             <img src="{{ asset('public/frontend/img/logo.png') }}" style="height:62px;" alt="Logo">

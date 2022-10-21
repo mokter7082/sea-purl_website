@@ -62,6 +62,14 @@
                         <li><a href="{{ route('video.index') }}">View Video</a></li>
                     </ul>
                 </li>
+                <p class="tool_title">Website Users</p>
+
+                <li class="has-child-item close-item">
+                    <a><i class="fa fa-cubes" aria-hidden="true"></i><span>Website</span></a>
+                    <ul class="nav child-nav level-1">
+                        <li><a href="">Group Booking</a></li>
+                    </ul>
+                </li>
 
 
 

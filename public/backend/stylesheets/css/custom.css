@@ -27,3 +27,8 @@
     width: 150px;
     overflow: hidden;
 }
+.tool_title {
+    padding: 0px 25px;
+    color: #189279;
+    margin: 0px !important;
+}

@@ -11,10 +11,13 @@
 <script src="{{ asset('/public/frontend/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('/public/frontend/lib/isotope/isotope.pkgd.min.js') }}"></script>
 <script src="{{ asset('/public/frontend/lib/lightbox/js/lightbox.min.js') }}"></script>
+{{-- <script src="{{ asset('/public/frontend/mail/jqBootstrapValidation.min.js') }}"></script> --}}
+{{-- <script src="{{ asset('/public/frontend/mail/contact.js') }}"></script> --}}
+
 
 <!-- Contact Javascript File -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
+{{-- <script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script> --}}
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
