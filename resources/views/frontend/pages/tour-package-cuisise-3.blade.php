@@ -2,9 +2,9 @@
 @section('title', 'About Us')
 @section('web_content')
     <!-- Page Header Start -->
-     <div class="pb-4 ">
-  
-            <img class="w-100" src="{{ asset('public/frontend/img/itinary-cruie-3.webp') }}" alt="">
+    <div class="pb-4 ">
+
+        <img class="w-100" src="{{ asset('public/frontend/img/itinary-cruie-3.webp') }}" alt="">
 
     </div>
     <!-- Page Header End -->
@@ -19,13 +19,13 @@
                         <div>
                             <p>Khulna – Harbaria – Katka – Kochikhali – Koromjal - Khulna</p>
                             <p>3 Days/ 2 Nights</p>
-                            <p>Price starts from BDT 16,000 per person</p>
+                            <p>Price starts from BDT 11,000 per person</p>
                         </div>
                     </div>
                     <div class="wrapper">
                         <div class="section-title_ text-left_">
                             <h2 class="section_heading">Sundarban Tour Itinerary</h2>
-                            <h2 class="section-title__title">Khulna – Harbaria – Kochikhali</h2>
+                            <h2 class="section-title__title">Day – 1: Khulna – Harbaria – Kochikhali</h2>
                         </div>
                         <ul>
                             <li>Our guide will meet you at Khulna Jahaj Ghat at 7:00am, transfer you to our boat and
@@ -41,7 +41,7 @@
                     </div>
                     <div class="wrapper">
                         <div class="section-title_ text-left_">
-                            <h2 class="section-title__title">Kochikhali – Kotka</h2>
+                            <h2 class="section-title__title">Day – 2: Kochikhali – Kotka</h2>
                         </div>
                         <ul>
                             <li>Early in the morning we shall offer trip through small creeks and canals by country boat
@@ -66,7 +66,7 @@
                     </div>
                     <div class="wrapper">
                         <div class="section-title_ text-left_">
-                            <h2 class="section-title__title">Kotka - Koromjol – Khulna</h2>
+                            <h2 class="section-title__title">Day – 3: Kotka - Koromjol – Khulna</h2>
                         </div>
                         <ul>
                             <li>Early in the morning, go for a ride on a noiseless wooden boat, and explore the creeks

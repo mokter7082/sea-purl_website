@@ -14,6 +14,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\WebsiteUserController;
+use App\Http\Controllers\WebsiteContentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,10 +44,7 @@ Route::get('/group-booking', [FrontendController::class, 'groupBooking'])->name(
 Route::get('/download-pdf', [FrontendController::class, 'downloadPdf'])->name('download-pdf');
 //STORE WEBSITE USER DATA
 Route::post('/group_booking_store', [WebsiteUserController::class, 'storeGroupBooking'])->name('group_booking_store');
-//ebd
-Route::post('/add-client',  [ClientController::class, 'addClient'])->name('add-client');
-Route::post('/store-message',  [ClientController::class, 'storeMessage'])->name('store-message');
-Route::get('/chat_loader',  [ClientController::class, 'chatLoader'])->name('chat_loader');
+
 //login % Logout
 Route::get('/login',[DashboardController::class,'adminLogin'])->name('login');
 Route::get('/logout',[DashboardController::class,'Logout'])->name('logout');
@@ -63,6 +61,25 @@ Route::post('/admin-login',[DashboardController::class,'adminDashboard'])->name(
         Route::resource('home-cruise', HomeCruiseController::class);
         Route::resource('gallery', GalleryController::class);
         Route::resource('video', VideoController::class);
+        //CONTENT UPLOAD ROUTE
+        //about content
+        Route::get('/create-about', [WebsiteContentController::class, 'createContent'])->name('create_content');
+        Route::post('/store-about', [WebsiteContentController::class, 'storeAboutContent'])->name('store_about_content');
+        Route::get('/list-about-content', [WebsiteContentController::class, 'listAboutContent'])->name('list_about_content');
+        Route::get('/list-about-content-edit/{id}', [WebsiteContentController::class, 'AboutContentEdit'])->name('about_content_edit');
+        Route::post('/list-about-content-update/{id}', [WebsiteContentController::class, 'AboutContentUpdate'])->name('about_content_update');
+        //sundarban content
+        Route::get('/create-sundarban', [WebsiteContentController::class, 'createSundarban'])->name('create_sundarban');
+        Route::post('/store-sundarban', [WebsiteContentController::class, 'storeSundarbanContent'])->name('store_sundarban_content');
+        Route::get('/list-sundarban-content', [WebsiteContentController::class, 'listSundarbantContent'])->name('list_sundarbant_content');
+        Route::get('/list-sundarban-content-edit/{id}', [WebsiteContentController::class, 'SundarbantContentEdit'])->name('sundarban_content_edit');
+        Route::post('/list-sundarban-content-update/{id}', [WebsiteContentController::class, 'SundarbanContentUpdate'])->name('sundarban_content_update');
+        //Tourist attractions
+        Route::get('/create-tourist-attractions', [WebsiteContentController::class, 'createTouristContent'])->name('create_to_attraction');
+        Route::post('/store-tourist-attraction', [WebsiteContentController::class, 'storeTouristAttraction'])->name('store_tourist_attraction');
+        Route::get('/list-tourist-attraction', [WebsiteContentController::class, 'listTouristAttraction'])->name('list_tourist_attraction');
+        Route::get('/list-tourist-attraction-edit/{id}', [WebsiteContentController::class, 'TouristAttractionEdit'])->name('tourist_attraction_edit');
+        Route::post('/list-tourist-attraction-update/{id}', [WebsiteContentController::class, 'TouristAttractionUpdate'])->name('tourist_attraction_update');
         // ADMIN DELETE ITEM ROUTE FROM HERE
         Route::get('/menu-delete/{id}', [MunuController::class, 'destroy'])->name('menu-delete');
         Route::get('/sub-menu-delete/{id}', [SubMenuController::class, 'destroy'])->name('sub_menu-delete');
@@ -71,6 +88,9 @@ Route::post('/admin-login',[DashboardController::class,'adminDashboard'])->name(
         Route::get('/cruise-four-delete/{id}', [CruiseFourController::class, 'destroy'])->name('cruise_four-delete');
         Route::get('/home_cruise-delete/{id}', [HomeCruiseController::class, 'destroy'])->name('home_cruise-delete');
         Route::get('/video-delete/{id}', [VideoController::class, 'destroy'])->name('video-delete');
+        //WEBSITE USER ROUTE
+        Route::get('/group-booking-user', [WebsiteContentController::class, 'groupBookinguser'])->name('group_booking_user');
+        
 
     });
 });

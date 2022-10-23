@@ -10,7 +10,7 @@ a {
 p {
     margin: 0px !important;
     text-align: justify !important;
-    font-size: 15px !important;
+    font-size: 16px !important;
 }
 ul {
     padding-left: 15px !important;
@@ -106,7 +106,7 @@ ul {
 }
 .line_clamp {
     display: -webkit-box;
-    -webkit-line-clamp: 18;
+    -webkit-line-clamp: 17;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

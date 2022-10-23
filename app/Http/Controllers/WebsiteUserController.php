@@ -24,4 +24,9 @@ class WebsiteUserController extends Controller
        $insert = DB::table('group_booking')->insert($data);
        return redirect()->route('group-booking')->with('success','Your submission has been sent');
     }
+    public function groupBookinguser()
+    {
+      $bookingUser = DB::table('group_booking')->get();
+      return view('backend.website_user.group-booking',compact('bookingUser'));
+    }
 }

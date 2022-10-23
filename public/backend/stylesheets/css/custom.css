@@ -32,3 +32,10 @@
     color: #189279;
     margin: 0px !important;
 }
+.table_text_area {
+    border: none;
+}
+.table_text_area:focus {
+    outline: none;
+    border: none !important;
+}

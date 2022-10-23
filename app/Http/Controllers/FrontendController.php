@@ -40,15 +40,25 @@ class FrontendController extends Controller
 
     public function aboutUs()
     {
-      return view('frontend.pages.about-us');
+      $aboutData = DB::table('about_contents')
+                  ->where('status','Active')
+                  ->get();
+      return view('frontend.pages.about-us',compact('aboutData'));
     }
     public function Sundarban()
     {
-      return view('frontend.pages.sundarban');
+      $sundarbanData = DB::table('sundarbans')
+      ->where('status','Active')
+      ->get(); 
+
+      return view('frontend.pages.sundarban',compact('sundarbanData'));
     }
     public function Bangladesh()
     {
-      return view('frontend.pages.bangladesh');
+      $torAttrData = DB::table('tourist_attractions')
+      ->where('status','Active')
+      ->get(); 
+      return view('frontend.pages.bangladesh',compact('torAttrData'));
     }
     public function Cruise3 ()
     {
