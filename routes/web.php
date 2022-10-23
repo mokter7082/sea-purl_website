@@ -42,6 +42,7 @@ Route::get('/gallery', [FrontendController::class, 'Gallery'])->name('gallery');
 // extanal route
 Route::get('/group-booking', [FrontendController::class, 'groupBooking'])->name('group-booking');
 Route::get('/download-pdf', [FrontendController::class, 'downloadPdf'])->name('download-pdf');
+Route::get('/view-details/{id}', [FrontendController::class, 'videoDetailsTouristAtt'])->name('view_details_to_att');
 //STORE WEBSITE USER DATA
 Route::post('/group_booking_store', [WebsiteUserController::class, 'storeGroupBooking'])->name('group_booking_store');
 

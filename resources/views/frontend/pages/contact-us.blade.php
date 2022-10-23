@@ -1,5 +1,5 @@
 @extends('layouts.app-frontend')
-@section('title', 'About Us')
+@section('title', 'Contact Us')
 @section('web_content')
     <section class="pt-4">
         <div class="container">

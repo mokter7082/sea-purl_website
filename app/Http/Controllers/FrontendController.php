@@ -134,7 +134,14 @@ class FrontendController extends Controller
   {
      return response()->download('public/frontend/pdf/foodmenu.pdf');
   }
-   
+  public function videoDetailsTouristAtt($id)
+  {
+    $singleData = DB::table('tourist_attractions')
+              ->where('id',$id)
+              ->first();
+           
+    return view('frontend.single_page.tourist-attraction',compact('singleData'));
+  }
     
    
  

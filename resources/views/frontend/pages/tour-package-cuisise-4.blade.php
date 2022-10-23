@@ -1,5 +1,5 @@
 @extends('layouts.app-frontend')
-@section('title', 'About Us')
+@section('title', 'Tour Package Cruise-4')
 @section('web_content')
     <!-- Page Header Start -->
     <div class="pb-4 ">

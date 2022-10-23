@@ -1,5 +1,5 @@
 @extends('layouts.app-frontend')
-@section('title', 'About Us')
+@section('title', 'Cruise-3')
 @section('web_content')
 
     <section>

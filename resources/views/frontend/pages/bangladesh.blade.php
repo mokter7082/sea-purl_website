@@ -1,5 +1,5 @@
 @extends('layouts.app-frontend')
-@section('title', 'About Us')
+@section('title', 'Bangladesh')
 @section('web_content')
     <!-- Page Header Start -->
 
@@ -141,7 +141,8 @@
                                             @if ($torData->img_position == 'left')
                                                 <div class="col-lg-6 pb-4">
                                                     <p class="line_clamp">{!! $torData->content ?? '' !!}</p>
-                                                    <a href="">More details</a>
+                                                    <a href="{{ route('view_details_to_att', $torData->id) }}">More
+                                                        details</a>
                                                 </div>
                                                 <div class="col-lg-6 pb-4" style="min-height: 400px;">
                                                     <div class="position-relative torist_att_image rounded overflow-hidden">
@@ -160,6 +161,8 @@
                                                 </div>
                                                 <div class="col-lg-6 pb-4">
                                                     <p class="line_clamp">{!! $torData->content ?? '' !!}</p>
+                                                    <a href="{{ route('view_details_to_att', $torData->id) }}">More
+                                                        details</a>
                                                 </div>
                                             @endif
 
