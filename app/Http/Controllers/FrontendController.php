@@ -87,11 +87,17 @@ class FrontendController extends Controller
     // }
     public function tourPackagesCruise3()
     {
-      $cruise3 =  DB::table('cruise_threes')
-      ->where('status','Active')
-      ->get();
+      $data['cruise3'] =  DB::table('cruise_threes')
+                    ->where('status','Active')
+                    ->get();
+      $data['tourPackageContent'] =  DB::table('t_p_crouise_3')
+                    ->where('status','Active')
+                    ->get();
+      $data['tourPackageContentFeature'] =  DB::table('t_p_crouise_3_features')
+                    ->where('status','Active')
+                    ->get();
       // dd($cruise3);
-      return view('frontend.pages.tour-package-cuisise-3',compact('cruise3'));
+      return view('frontend.pages.tour-package-cuisise-3',$data);
     }
     public function tourPackagesCruise4()
     {

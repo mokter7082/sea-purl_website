@@ -122,7 +122,7 @@
                     </div>
                 </div>
     </section>
-    <section class="pt-5">
+    {{-- <section class="pt-5">
         <div class="container">
             <div class="col-md-6 mx-auto">
                 <div class="box p- w-100" style="height: 200px">
@@ -141,6 +141,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 @endsection

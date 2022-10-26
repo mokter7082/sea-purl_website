@@ -6,7 +6,7 @@
             <div class="leftside-content-header">
                 <ul class="breadcrumbs">
                     <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Dashboard </a></li>
-                    <li><a>Create Tourist Attraction</a></li>
+                    <li><a>Create Content</a></li>
                 </ul>
             </div>
         </div>
@@ -19,9 +19,9 @@
                             {{ session()->get('success') }}
                         </div>
                     @endif
-                    <h3>Create Tourist Attraction Content</h3>
+                    <h3>Create tour package cuise 3 feature content</h3>
                     <form id="inline-validation" class="form-horizontal form-stripe"
-                        action="{{ route('store_tourist_attraction') }}" method="POST" enctype="multipart/form-data">
+                        action="{{ route('store__t_p_cruise_3_features') }}" method="POST">
                         @csrf
 
                         <div class="form-group">
@@ -30,20 +30,8 @@
                                 placeholder="Section Title" required>
                         </div>
                         <div class="form-group">
-                            <label for="textareaMaxLength" class="control-label">Content</label>
-                            <textarea class="form-control" name="content" rows="3" id="textareaMaxLength" placeholder="Write Content"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="title">Images</label>
-                            <input type="file" name="image" class="form-control" id="title" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="title">Content Position</label>
-                            <select name="img_position" class="form-control" id="">
-                                <option value="left">Left</option>
-                                <option value="right">Right</option>
-                            </select>
+                            <label for="price_foreigner">Content </label>
+                            <textarea class="ckeditor form-control" name="content"></textarea>
                         </div>
                         <div class="form-group" style="width: 50%">
                             <select name="status" class="form-control" id="">
@@ -61,11 +49,12 @@
             </div>
             <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
         </div>
+    @endsection
 
-        @push('scripts')
-            <script>
-                $(document).ready(function() {
-                    $('.ckeditor').ckeditor();
-                });
-            </script>
-        @endpush
+    @push('scripts')
+        <script>
+            $(document).ready(function() {
+                $('.ckeditor').ckeditor();
+            });
+        </script>
+    @endpush

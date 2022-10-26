@@ -226,6 +226,8 @@
     <script src="{{ asset('public/backend/vendor/data-table/media/js/dataTables.bootstrap.min.js') }}"></script>
     <!--Examples-->
     <script src="{{ asset('public/backend/javascripts/examples/tables/data-tables.js') }}"></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+
     @stack('scripts')
 </body>
 

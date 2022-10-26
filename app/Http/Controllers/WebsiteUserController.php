@@ -20,7 +20,8 @@ class WebsiteUserController extends Controller
       $data['page'] = $request->page ?? "";
       $data['org_name'] = $request->org_name ?? "";
       $data['how_many_people'] = $request->how_many_people ?? "";
-      $data['shift_date'] = $request->date ?? "";
+      $data['start_date'] = $request->start_date ?? "";
+      $data['end_date'] = $request->start_date ?? "";
        $insert = DB::table('group_booking')->insert($data);
        return redirect()->route('group-booking')->with('success','Your submission has been sent');
     }

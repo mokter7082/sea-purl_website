@@ -81,6 +81,19 @@ Route::post('/admin-login',[DashboardController::class,'adminDashboard'])->name(
         Route::get('/list-tourist-attraction', [WebsiteContentController::class, 'listTouristAttraction'])->name('list_tourist_attraction');
         Route::get('/list-tourist-attraction-edit/{id}', [WebsiteContentController::class, 'TouristAttractionEdit'])->name('tourist_attraction_edit');
         Route::post('/list-tourist-attraction-update/{id}', [WebsiteContentController::class, 'TouristAttractionUpdate'])->name('tourist_attraction_update');
+       
+        //Tourist package cruise 3 place
+        Route::get('/create-tour-cruise-3', [WebsiteContentController::class, 'createTPCruise3Content'])->name('create_t_p_cruise_3');
+        Route::post('/store-tour-cruise-3', [WebsiteContentController::class, 'storeTPCruise3'])->name('store__t_p_cruise_3');
+        Route::get('/list-tour-cruise-3', [WebsiteContentController::class, 'listTPCruise3'])->name('list__t_p_cruise_3');
+        Route::get('/list-tour-cruise-3-edit/{id}', [WebsiteContentController::class, 'TPCruise3Edit'])->name('t_p_cruise_3_edit');
+        Route::post('/list-tour-cruise-3-update/{id}', [WebsiteContentController::class, 'TPCruise3Update'])->name('t_p_cruise_3_update');
+        //Tourist package cruise 3 features
+        Route::get('/create-tour-cruise-3-features', [WebsiteContentController::class, 'createTPCruise3FeaturesContent'])->name('create_t_p_cruise_3_features');
+        Route::post('/store-tour-cruise-3-features', [WebsiteContentController::class, 'storeTPCruise3Features'])->name('store__t_p_cruise_3_features');
+        Route::get('/list-tour-cruise-3-features', [WebsiteContentController::class, 'listTPCruise3Features'])->name('list__t_p_cruise_3_features');
+        Route::get('/list-tour-cruise-3-features-edit/{id}', [WebsiteContentController::class, 'TPCruise3FeaturesEdit'])->name('t_p_cruise_3_features_edit');
+        Route::post('/list-tour-cruise-3-features-update/{id}', [WebsiteContentController::class, 'TPCruise3FeaturesUpdate'])->name('t_p_cruise_3_features_update');
         // ADMIN DELETE ITEM ROUTE FROM HERE
         Route::get('/menu-delete/{id}', [MunuController::class, 'destroy'])->name('menu-delete');
         Route::get('/sub-menu-delete/{id}', [SubMenuController::class, 'destroy'])->name('sub_menu-delete');
@@ -90,7 +103,7 @@ Route::post('/admin-login',[DashboardController::class,'adminDashboard'])->name(
         Route::get('/home_cruise-delete/{id}', [HomeCruiseController::class, 'destroy'])->name('home_cruise-delete');
         Route::get('/video-delete/{id}', [VideoController::class, 'destroy'])->name('video-delete');
         //WEBSITE USER ROUTE
-        Route::get('/group-booking-user', [WebsiteContentController::class, 'groupBookinguser'])->name('group_booking_user');
+        Route::get('/group-booking-user', [WebsiteUserController::class, 'groupBookinguser'])->name('group_booking_user');
         
 
     });

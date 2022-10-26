@@ -90,6 +90,29 @@
                             <li><a href="{{ route('list_sundarbant_content') }}">View</a></li>
                         </ul>
                     </li>
+                    <li class=" has-child-item close-item">
+                        <a>
+                            <i class="fa fa-sitemap" aria-hidden="true"></i>
+                            <span>Tour Package</span>
+                        </a>
+                        <ul class="nav child-nav level-1">
+                            <li class="has-child-item close-item">
+                                <a>Cruise-3 place</a>
+                                <ul class="nav child-nav level-2 ">
+                                    <li><a href="{{ route('create_t_p_cruise_3') }}">Create</a></li>
+                                    <li><a href="{{ route('list__t_p_cruise_3') }}">View</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a>Cruise-3 features</a>
+                                <ul class="nav child-nav level-2 ">
+                                    <li><a href="{{ route('create_t_p_cruise_3_features') }}">Create</a></li>
+                                    <li><a href="{{ route('list__t_p_cruise_3_features') }}">View</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
                 @endif
                 <p class="tool_title">Website Users</p>
                 <li class="has-child-item close-item">

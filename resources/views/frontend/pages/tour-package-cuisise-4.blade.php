@@ -205,7 +205,7 @@
                     <li> Bank Name# Premier Bank</li>
                     <li>Branch# Banani, Dhaka</li>
                     <li>Account Name# Sea Pearl Beach Resort & Spa Ltd. Cruise 03</li>
-                    <li>Account Number# 104-131-0000-3009</li>
+                    <li>Account Number# 104-131-0000-3010</li>
                     <li>Booking will be confirmed only after getting a 50% deposit, the rest of the payment has to be paid
                         15 daysbefore the tour.</li>
                     <li>Booking will be automatically canceled if the tour’s full price is not paid 15 days before the tour.

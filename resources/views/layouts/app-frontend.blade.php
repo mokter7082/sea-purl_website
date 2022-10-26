@@ -26,26 +26,38 @@
             <h4 class="font-weight-semi-bold text-primary mb-4">Contact Us</h4>
             <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>Advanced Noorani Tower</p>
             <p class="pl-3">(Floor-13), 1 Mohakhali C/A</p>
-            <p><i class="fa fa-phone-alt text-primary mr-2"></i>+88 02 222246796</p>
-            <p><i class="fa fa-phone-alt text-primary mr-2"></i>+8801844016001</p>
-            <p><i class="fa fa-phone-alt text-primary mr-2"></i>+88 02 9140616</p>
+            <p><i class="fa fa-phone-alt text-primary mr-2"></i>+8801886553333</p>
+
             {{-- <p><i class="fa fa-envelope text-primary mr-2"></i>info@example.com</p> --}}
         </div>
         <div class="col-lg-4 col-md-6 mb-5">
             <h4 class="font-weight-semi-bold text-primary mb-4">Important Links</h4>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Sea Perl Beach Resort &
+                <a class="text-white" target="_blank" href="https://seapearlcoxsbazar.com/"><i
+                        class="fa fa-angle-right mr-2"></i>Sea
+                    Perl Beach Resort &
                     Spa Ltd.</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Sea Pearl Water Park</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>La Villa Western
+                <a class="text-white" target="_blank" href="https://www.facebook.com/waterparkcoxsbazar"><i
+                        class="fa fa-angle-right mr-2"></i>Sea Pearl Water Park</a>
+                <a class="text-white" target="_blank" href="https://lavilladhaka.com/"><i
+                        class="fa fa-angle-right mr-2"></i>La Villa
+                    Western
                     Dhaka</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Sea Pearl Sundarban Eco
+                <a class="text-white" target="_blank" href=" https://www.facebook.com/seapearlsundarban/"><i
+                        class="fa fa-angle-right mr-2"></i>Sea Pearl Sundarban Eco
                     Resort Ltd. </a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Bengal Vacation Club Ltd.</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Beautiful Bangladesh</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Sundarban Tourism</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Bangladesh Tourism Board</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Bangladesh Tourist Police</a>
+                <a class="text-white" target="_blank" href="https://www.facebook.com/bvcbd/"><i
+                        class="fa fa-angle-right mr-2"></i>Bengal Vacation Club Ltd.</a>
+                <a class="text-white" target="_blank" href="https://beautifulbangladesh.gov.bd/"><i
+                        class="fa fa-angle-right mr-2"></i>Beautiful Bangladesh</a>
+                <a class="text-white" target="_blank" href="https://sundarbantourism.bforest.gov.bd/en"><i
+                        class="fa fa-angle-right mr-2"></i>Sundarban Tourism</a>
+                <a class="text-white" target="_blank" href="http://www.tourismboard.gov.bd/"><i
+                        class="fa fa-angle-right mr-2"></i>Bangladesh
+                    Tourism Board</a>
+                <a class="text-white" target="_blank" href=" https://tourist.police.gov.bd/"><i
+                        class="fa fa-angle-right mr-2"></i>Bangladesh
+                    Tourist Police</a>
             </div>
         </div>
 
@@ -82,7 +94,7 @@
                     <a class="nav-link text-white py-0" href="#">Terms & Conditions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Refund & Retetn Policy</a>
+                    <a class="nav-link text-white py-0" href="#">Refund & Return Policy</a>
                 </li>
             </ul>
         </div>

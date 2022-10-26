@@ -28,3 +28,8 @@
 .card_container {
     padding: 2px 16px;
 }
+.custom_select {
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+}

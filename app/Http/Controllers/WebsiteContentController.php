@@ -109,7 +109,7 @@ class WebsiteContentController extends Controller
     }
     public function storeSundarbanContent(Request $request)
     {
-        // dd($request->all());
+      
        $data = array();
        $data['title'] = $request->title ?? "";
        $data['content'] = $request->content ?? "";
@@ -143,6 +143,94 @@ class WebsiteContentController extends Controller
                     ->update($data);
          return redirect()->route('list_sundarbant_content')->with('success','Content update successfully'); 
     }
+
+       //tour package cruise 3 place
+       public function createTPCruise3Content()
+       {
+           return view('backend.t_p_cruise_3.create');
+       }
+       public function storeTPCruise3(Request $request)
+       {
+
+          $data = array();
+          $data['title'] = $request->title ?? "";
+          $data['content'] = $request->content ?? "";
+          $data['status'] = $request->status ?? "";
+          $insert = DB::table('t_p_crouise_3')->insert($data);
+          return redirect()->route('create_t_p_cruise_3')->with('success','Content created successfully');
+       }
+       public function listTPCruise3()
+       {
+           $tourPackCruise3 = DB::table('t_p_crouise_3') ->get();
+          
+           return view('backend.t_p_cruise_3.list',compact('tourPackCruise3'));
+       }
+       public function TPCruise3Edit($id)
+       {
+           $tourPackCruise3Edit = DB::table('t_p_crouise_3')
+           ->where('id',$id)
+           ->first();
+         
+          return view('backend.t_p_cruise_3.edit',compact('tourPackCruise3Edit'));
+       }
+       public function TPCruise3Update(Request $request,$id)
+       {
+           $data = array();
+           $data['title'] = $request->title ?? "";
+           $data['content'] = $request->content ?? "";
+           $data['status'] = $request->status ?? "";
+     
+           $tpPackag = DB::table('t_p_crouise_3')
+                       ->where('id',$id)
+                       ->update($data);
+            return redirect()->route('list__t_p_cruise_3')->with('success','Content update successfully'); 
+       }
+
+
+
+        //tour package cruise 3 features
+        public function createTPCruise3FeaturesContent()
+        {
+ 
+            return view('backend.t_p_cruise_3_features.create');
+        }
+        public function storeTPCruise3Features(Request $request)
+        {
+ 
+           $data = array();
+           $data['title'] = $request->title ?? "";
+           $data['content'] = $request->content ?? "";
+           $data['status'] = $request->status ?? "";
+           $insert = DB::table('t_p_crouise_3_features')->insert($data);
+           return redirect()->route('create_t_p_cruise_3_features')->with('success','Content created successfully');
+        }
+        public function listTPCruise3Features()
+        {
+            $tourPackCruise3Features = DB::table('t_p_crouise_3_features') ->get();
+           
+            return view('backend.t_p_cruise_3_features.list',compact('tourPackCruise3Features'));
+        }
+        public function TPCruise3FeaturesEdit($id)
+        {
+            $tourPackCruise3EditFeature = DB::table('t_p_crouise_3_features')
+            ->where('id',$id)
+            ->first();
+          
+           return view('backend.t_p_cruise_3_features.edit',compact('tourPackCruise3EditFeature'));
+        }
+        public function TPCruise3FeaturesUpdate(Request $request,$id)
+        {
+            $data = array();
+            $data['title'] = $request->title ?? "";
+            $data['content'] = $request->content ?? "";
+            $data['status'] = $request->status ?? "";
+      
+            $tpPackag = DB::table('t_p_crouise_3_features')
+                        ->where('id',$id)
+                        ->update($data);
+             return redirect()->route('list__t_p_cruise_3_features')->with('success','Content update successfully'); 
+        }
+   
 
 
 
