@@ -33,3 +33,18 @@
     border-radius: 30px;
     border: 1px solid #ced4da;
 }
+.content_wrapper table {
+    border: 1px solid #dee2e6;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #777777;
+}
+.content_wrapper table td {
+    border: 1px solid #dee2e6 !important;
+    padding: 10px;
+}
+.content_wrapper table th {
+    border: 1px solid #dee2e6 !important;
+    padding: 10px;
+}

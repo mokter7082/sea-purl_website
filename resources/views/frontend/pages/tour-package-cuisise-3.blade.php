@@ -17,7 +17,7 @@
                             <div class="section-title_ text-left_">
                                 <h2 class="section-title__title">{{ $data->title ?? '' }}</h2>
                             </div>
-                            <div>{!! $data->content ?? '' !!}</div>
+                            <div class="content_wrapper">{!! $data->content ?? '' !!}</div>
                         </div>
                     @endforeach
 
