@@ -19,21 +19,20 @@
                             {{ session()->get('success') }}
                         </div>
                     @endif
-                    <h3>Edit tour package cruise 3 features</h3>
+                    <h3>Edit tour package cruise 3</h3>
                     <form id="inline-validation" class="form-horizontal form-stripe"
-                        action="{{ route('t_p_cruise_3_features_update', $tourPackCruise3EditFeature->id) }}"
-                        method="POST">
+                        action="{{ route('t_p_cruise_4_update', $tourPackCruise4Edit->id) }}" method="POST">
                         @csrf
 
 
                         <div class="form-group">
                             <label for="price_foreigner">Section Title </label>
                             <input type="text" name="title" class="form-control"
-                                value="{{ $tourPackCruise3EditFeature->title ?? '' }}">
+                                value="{{ $tourPackCruise4Edit->title ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="price_foreigner">Content </label>
-                            <textarea class="ckeditor form-control" name="content">{{ $tourPackCruise3EditFeature->content ?? '' }}</textarea>
+                            <textarea class="ckeditor form-control" name="content">{{ $tourPackCruise4Edit->content ?? '' }}</textarea>
                         </div>
                         <div class="form-group" style="width: 50%">
                             <select name="status" class="form-control" id="">

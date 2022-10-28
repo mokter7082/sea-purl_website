@@ -64,7 +64,6 @@ class FrontendController extends Controller
     {
      $cruise3 =  DB::table('cruise_threes')
                 ->where('status','Active')
-                ->orderBy('id', 'desc')
                 ->get();
     return view('frontend.pages.crouise-3',compact('cruise3'));
     }
@@ -72,7 +71,6 @@ class FrontendController extends Controller
     {
      $cruise4 = DB::table('cruise_fours')
               ->where('status','Active')
-              ->orderBy('id', 'desc')
               ->get();
     return view('frontend.pages.crouise-4',compact('cruise4'));
     }
@@ -87,24 +85,17 @@ class FrontendController extends Controller
     // }
     public function tourPackagesCruise3()
     {
-      $data['cruise3'] =  DB::table('cruise_threes')
+      $data['tourPackageCruise3Content'] =  DB::table('t_p_crouise_3')
                     ->where('status','Active')
                     ->get();
-      $data['tourPackageContent'] =  DB::table('t_p_crouise_3')
-                    ->where('status','Active')
-                    ->get();
-      $data['tourPackageContentFeature'] =  DB::table('t_p_crouise_3_features')
-                    ->where('status','Active')
-                    ->get();
-      // dd($cruise3);
       return view('frontend.pages.tour-package-cuisise-3',$data);
     }
     public function tourPackagesCruise4()
     {
-      $cruise4 = DB::table('cruise_fours')
+      $data['tourPackageCruise4Content'] =  DB::table('t_p_crouise_4')
       ->where('status','Active')
       ->get();
-      return view('frontend.pages.tour-package-cuisise-4',compact('cruise4'));
+      return view('frontend.pages.tour-package-cuisise-4',$data);
     }
     public function contactUs ()
     {

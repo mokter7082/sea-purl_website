@@ -27,24 +27,13 @@
                         <h3>Edit cruises</h3>
 
                         <div class="form-group">
-                            <label for="cabin_type">Cabin Type</label>
-                            <input type="text" name="cabin_type" class="form-control" id="cabin_type"
-                                value="{{ $cruises->cabin_type ?? '' }}" required>
+                            <label for="price_foreigner">Section Title </label>
+                            <input type="text" name="title" class="form-control" value="{{ $cruises->title ?? '' }}">
                         </div>
                         <div class="form-group">
-                            <label for="bed_type">Bed Type</label>
-                            <input type="text" name="bed_type" class="form-control" id="bed_type"
-                                value="{{ $cruises->bed_type ?? '' }}" required>
+                            <label for="price_foreigner">Content </label>
+                            <textarea class="ckeditor form-control" name="content">{{ $cruises->content ?? '' }}</textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="cabin_qty">Cabin Quantity </label>
-                            <input type="number" name="cabin_qty" class="form-control" id="cabin_qty"
-                                value="{{ $cruises->cabin_qty ?? '' }}" required>
-                        </div>
-                        {{-- <div class="form-group">
-                            <label for="image">Images</label>
-                            <input type="file" name="image" class="form-control" id="image" required>
-                        </div> --}}
                         <div class="form-group" style="width: 50%">
                             <select name="status" class="form-control" id="">
                                 <option value="Active">Active</option>

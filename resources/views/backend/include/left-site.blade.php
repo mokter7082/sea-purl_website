@@ -97,17 +97,17 @@
                         </a>
                         <ul class="nav child-nav level-1">
                             <li class="has-child-item close-item">
-                                <a>Cruise-3 place</a>
+                                <a>Cruise-3</a>
                                 <ul class="nav child-nav level-2 ">
                                     <li><a href="{{ route('create_t_p_cruise_3') }}">Create</a></li>
                                     <li><a href="{{ route('list__t_p_cruise_3') }}">View</a></li>
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
-                                <a>Cruise-3 features</a>
+                                <a>Cruise-4</a>
                                 <ul class="nav child-nav level-2 ">
-                                    <li><a href="{{ route('create_t_p_cruise_3_features') }}">Create</a></li>
-                                    <li><a href="{{ route('list__t_p_cruise_3_features') }}">View</a></li>
+                                    <li><a href="{{ route('create_t_p_cruise_4') }}">Create</a></li>
+                                    <li><a href="{{ route('list__t_p_cruise_4') }}">View</a></li>
                                 </ul>
                             </li>
 

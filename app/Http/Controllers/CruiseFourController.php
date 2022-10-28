@@ -40,27 +40,11 @@ class CruiseFourController extends Controller
      */
     public function store(Request $request)
     {
-        $data = array();
-        $data['cabin_type'] = $request->cabin_type;
-        $data['bed_type'] = $request->bed_type;
-        $data['cabin_qty'] = $request->cabin_qty;
-        $data['price_children'] = $request->price_children;
-        $data['price_adult'] = $request->price_adult;
-        $data['price_foreigner'] = $request->price_foreigner;
-        $image= $request->file('image');
-        if($image){
-            $image_name = Str::random(20);
-            $ext = strtolower($image->getClientOriginalExtension());
-            $image_fullname = $image_name.'.'.$ext;
-            $upload_path ='public/cruise_four';
-            $image_url = $upload_path.$image_fullname;
-            $success = $image->move($upload_path,$image_fullname);
-            if($success){
-                $data['image']=$image_fullname;
-                DB::table('cruise_fours')->insert($data);
-                return redirect()->route('cruise-four.create')->with('success','Cruise created successfully');
-            }
-        }
+        $data['title'] = $request->title ?? "";
+        $data['content'] = $request->content ?? "";
+        $data['status'] = $request->status;
+        DB::table('cruise_fours')->insert($data);
+        return redirect()->route('cruise-four.create')->with('success','Cruise created successfully');
     }
 
     /**
@@ -96,9 +80,8 @@ class CruiseFourController extends Controller
     public function update(Request $request, $id)
     {
         $cruise =  CruiseFour::find($id);
-        $cruise->cabin_type = $request->input('cabin_type');
-        $cruise->bed_type = $request->input('bed_type');
-        $cruise->cabin_qty = $request->input('cabin_qty');
+        $cruise->title = $request->input('title');
+        $cruise->content = $request->input('content');
         $cruise->status = $request->input('status');
         $cruise->save();
         return redirect()->route('cruise-four.index')->with('update','update successfull!');

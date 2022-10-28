@@ -88,17 +88,19 @@ Route::post('/admin-login',[DashboardController::class,'adminDashboard'])->name(
         Route::get('/list-tour-cruise-3', [WebsiteContentController::class, 'listTPCruise3'])->name('list__t_p_cruise_3');
         Route::get('/list-tour-cruise-3-edit/{id}', [WebsiteContentController::class, 'TPCruise3Edit'])->name('t_p_cruise_3_edit');
         Route::post('/list-tour-cruise-3-update/{id}', [WebsiteContentController::class, 'TPCruise3Update'])->name('t_p_cruise_3_update');
-        //Tourist package cruise 3 features
-        Route::get('/create-tour-cruise-3-features', [WebsiteContentController::class, 'createTPCruise3FeaturesContent'])->name('create_t_p_cruise_3_features');
-        Route::post('/store-tour-cruise-3-features', [WebsiteContentController::class, 'storeTPCruise3Features'])->name('store__t_p_cruise_3_features');
-        Route::get('/list-tour-cruise-3-features', [WebsiteContentController::class, 'listTPCruise3Features'])->name('list__t_p_cruise_3_features');
-        Route::get('/list-tour-cruise-3-features-edit/{id}', [WebsiteContentController::class, 'TPCruise3FeaturesEdit'])->name('t_p_cruise_3_features_edit');
-        Route::post('/list-tour-cruise-3-features-update/{id}', [WebsiteContentController::class, 'TPCruise3FeaturesUpdate'])->name('t_p_cruise_3_features_update');
+         //Tourist package cruise 4 place
+         Route::get('/create-tour-cruise-4', [WebsiteContentController::class, 'createTPCruise4Content'])->name('create_t_p_cruise_4');
+         Route::post('/store-tour-cruise-4', [WebsiteContentController::class, 'storeTPCruise4'])->name('store__t_p_cruise_4');
+         Route::get('/list-tour-cruise-4', [WebsiteContentController::class, 'listTPCruise4'])->name('list__t_p_cruise_4');
+         Route::get('/list-tour-cruise-4-edit/{id}', [WebsiteContentController::class, 'TPCruise4Edit'])->name('t_p_cruise_4_edit');
+         Route::post('/list-tour-cruise-4-update/{id}', [WebsiteContentController::class, 'TPCruise4Update'])->name('t_p_cruise_4_update');
+     
         // ADMIN DELETE ITEM ROUTE FROM HERE
         Route::get('/menu-delete/{id}', [MunuController::class, 'destroy'])->name('menu-delete');
         Route::get('/sub-menu-delete/{id}', [SubMenuController::class, 'destroy'])->name('sub_menu-delete');
         Route::get('/slider-delete/{id}', [SliderController::class, 'destroy'])->name('slider-delete');
         Route::get('/cruise-three-delete/{id}', [CruiseThreeController::class, 'destroy'])->name('cruise_three-delete');
+        Route::get('/gallery-delete/{id}', [GalleryController::class, 'destroy'])->name('gallery_delete');
         Route::get('/cruise-four-delete/{id}', [CruiseFourController::class, 'destroy'])->name('cruise_four-delete');
         Route::get('/home_cruise-delete/{id}', [HomeCruiseController::class, 'destroy'])->name('home_cruise-delete');
         Route::get('/video-delete/{id}', [VideoController::class, 'destroy'])->name('video-delete');

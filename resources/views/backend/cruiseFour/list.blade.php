@@ -32,10 +32,8 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Cabin Type</th>
-                                        <th>Bed Type</th>
-                                        <th>Cruise Quantity</th>
-                                        <th>Cruise Image</th>
+                                        <th>Section Tittle</th>
+                                        <th>Content</th>
                                         <th>Status</th>
                                         <th class="text-center">Action</th>
                                     </tr>
@@ -44,17 +42,14 @@
                                     @foreach ($cruises as $cruise)
                                         <tr>
                                             <td>{{ $cruise->id }}</td>
-                                            <td>{{ $cruise->cabin_type }}</td>
-                                            <td>{{ $cruise->bed_type }}</td>
-                                            <td>{{ $cruise->cabin_qty }}</td>
-                                            <td><img class="of_cover"
-                                                    src="{{ url('public/cruise_four/' . $cruise->image) }}" width="100"
-                                                    height="100"></td>
+                                            <td>{{ $cruise->title }}</td>
+                                            <td>
+                                                <textarea class="form-control table_text_area" rows="3" readonly>{!! $cruise->content ?? '' !!}</textarea>
+                                            </td>
                                             <td>{{ $cruise->status }}</td>
                                             <td class="button_container">
                                                 <a class="btn btn-sm btn-danger my_btn" onclick="myFunction();"
                                                     href="{{ route('cruise_four-delete', $cruise->id) }}">Delete</a>
-
                                                 <a href="{{ route('cruise-four.edit', $cruise->id) }}"
                                                     class="btn btn-sm btn-success my_btn">
                                                     Edit

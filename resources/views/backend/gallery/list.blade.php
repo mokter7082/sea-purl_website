@@ -45,15 +45,8 @@
                                                     height="100"></td>
                                             <td>{{ $gallery->status }}</td>
                                             <td class="button_container">
-                                                <form method="POST" id="delete"
-                                                    action="{{ route('gallery.destroy', $gallery->id) }}">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <input name="_method" type="hidden" value="DELETE">
-                                                    <button type="button" class="btn btn-sm btn-danger show_confirm"
-                                                        data-toggle="tooltip" title='Delete'>Delete</button>
-                                                </form>
-
+                                                <a class="btn btn-sm btn-danger my_btn" onclick="myFunction();"
+                                                    href="{{ route('gallery_delete', $gallery->id) }}">Delete</a>
                                                 <a href="{{ route('gallery.edit', $gallery->id) }}"
                                                     class="btn btn-sm btn-success my_btn">
                                                     Edit
@@ -72,28 +65,10 @@
         </div>
     @endsection
     @push('scripts')
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".show_confirm").click(function(e) {
-                    e.preventDefault();
-                    swal({
-                            title: "Are you sure?",
-                            text: "Once deleted, you will not be able to recover this imaginary file!",
-                            icon: "warning",
-                            buttons: true,
-                            dangerMode: true,
-                        })
-                        .then((willDelete) => {
-                            if (willDelete) {
-                                $('#delete').submit();
-                                // swal("Poof! Your Data has been deleted!", {
-                                //     icon: "success",
-                                // });
-                            } else {
-                                swal("Your Data file is safe!");
-                            }
-                        });
-                });
-            });
+        <script>
+            function myFunction() {
+                if (!confirm("Are You Sure to delete this"))
+                    event.preventDefault();
+            }
         </script>
     @endpush

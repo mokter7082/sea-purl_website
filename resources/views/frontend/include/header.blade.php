@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sea Pearl</title>
+    <title>Sea Pearl @yield('title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Sea Pearl Cruise" name="keywords">
     <meta content="Sea Pearl Cruise" name="description">

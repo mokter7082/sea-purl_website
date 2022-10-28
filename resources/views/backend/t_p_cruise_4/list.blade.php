@@ -6,7 +6,7 @@
             <div class="leftside-content-header">
                 <ul class="breadcrumbs">
                     <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Dashboard </a></li>
-                    <li><a>Tour package cruise 3</a></li>
+                    <li><a>Tour package </a></li>
                 </ul>
             </div>
         </div>
@@ -23,7 +23,7 @@
                         {{ session()->get('delete') }}
                     </div>
                 @endif
-                <h3 class=""><b>Tour package cruise 3 features</b></h3>
+                <h3 class=""><b>Tour package cruise 4</b></h3>
                 @if (session()->has('success'))
                     <div class="alert alert-success">
                         {{ session()->get('success') }}
@@ -44,7 +44,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($tourPackCruise3Features as $data)
+                                    @foreach ($tourPackCruise4 as $data)
                                         <tr>
                                             <td>{{ $data->id }}</td>
                                             <td>{{ $data->title ?? '' }}</td>
@@ -53,7 +53,10 @@
                                             </td>
                                             <td>{{ $data->status }}</td>
                                             <td class="button_container">
-                                                <a href="{{ route('t_p_cruise_3_features_edit', $data->id) }}"
+                                                {{-- <a class="btn btn-sm btn-danger my_btn" onclick="myFunction();"
+                                                href="{{ route('cruise_four-delete', $data->id) }}">Delete</a> --}}
+
+                                                <a href="{{ route('t_p_cruise_4_edit', $data->id) }}"
                                                     class="btn btn-sm btn-success my_btn">
                                                     Edit
                                                 </a>

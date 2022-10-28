@@ -19,9 +19,9 @@
                             {{ session()->get('success') }}
                         </div>
                     @endif
-                    <h3>Create tour package cuise 3 feature content</h3>
+                    <h3>Create tour package cuise 4 content</h3>
                     <form id="inline-validation" class="form-horizontal form-stripe"
-                        action="{{ route('store__t_p_cruise_3_features') }}" method="POST">
+                        action="{{ route('store__t_p_cruise_4') }}" method="POST">
                         @csrf
 
                         <div class="form-group">
