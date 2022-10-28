@@ -63,19 +63,14 @@
         <div class="container">
             <div class="col-md-6 mx-auto">
                 <div class="box p- w-100" style="height: 200px">
-                    <h4 class="text-center pt-2"><strong>Changable Box</strong></h4>
+                    <h4 class="text-center pt-2"><strong>{{ $changable_box->title ?? '' }}</strong></h4>
                     <div class="content">
-                        <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui iure, cumque,
-                            placeat ullam
-                            culpa ut
-                            aspernatur, expedita minima facere cupiditate! Est officiis odio veniam aperiam incidunt facilis
-                            nobis amet dignissimos sunt soluta quisquam fuga, architecto temporibus tempore qui. Voluptatem?
-                            Est
-                            officiis odio veniam aperiam incidunt facilis
-                            nobis amet dignissimos sunt soluta quisquam fuga, architecto temporibus tempore qui. Voluptatem?
-                        </p>
+                        <div class="px-4">
+                            {!! $changable_box->content ?? '' !!}
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

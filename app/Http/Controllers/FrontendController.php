@@ -62,10 +62,15 @@ class FrontendController extends Controller
     }
     public function Cruise3 ()
     {
-     $cruise3 =  DB::table('cruise_threes')
+     $data['cruise3'] =  DB::table('cruise_threes')
                 ->where('status','Active')
                 ->get();
-    return view('frontend.pages.crouise-3',compact('cruise3'));
+    $data['changable_box'] =  DB::table('changable_box')
+                      ->where('status','Active')
+                      ->orWhere('type','cruise_3')
+                      ->first();
+         
+    return view('frontend.pages.crouise-3',$data);
     }
     public function Cruise4 ()
     {

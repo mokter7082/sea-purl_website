@@ -3,7 +3,7 @@
 @section('web_content')
     <!-- Page Header Start -->
     <div class='pb-4'>
-        <img class="w-100" src="{{ asset('public/frontend/img/Sundarban.webp') }}" alt="">
+        <img class="w-100" src="{{ asset('public/frontend/img/sundarban_final_banner.jfif') }}" alt="">
     </div>
     <!-- Page Header End -->
     <!--About Two Start-->
@@ -23,10 +23,6 @@
                         @endforeach
 
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>

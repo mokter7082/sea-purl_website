@@ -227,6 +227,49 @@ class WebsiteContentController extends Controller
                             ->update($data);
                  return redirect()->route('list__t_p_cruise_4')->with('success','Content update successfully'); 
             }
+               //changeable box
+               public function createChangableBoxContent()
+               {
+                   return view('backend.changable_box.create');
+               }
+               public function storeChangableBox(Request $request)
+               {
+                  $data = array();
+                  $data['title'] = $request->title ?? "";
+                  $data['content'] = $request->content ?? "";
+                  $data['type'] = $request->type ?? "";
+                  $data['status'] = $request->status ?? "";
+                  $insert = DB::table('changable_box')->insert($data);
+                  return redirect()->route('create_changeable_box')->with('success','Content created successfully');
+               }
+               public function listChangableBox()
+               {
+                   $changeAbleBox = DB::table('changable_box') ->get();
+                  
+                   return view('backend.changable_box.list',compact('changeAbleBox'));
+               }
+               public function ChangableBoxEdit($id)
+               {
+                   $changeAbleBoxEdit = DB::table('changable_box')
+                   ->where('id',$id)
+                   ->first();
+                 
+                  return view('backend.changable_box.edit',compact('changeAbleBoxEdit'));
+               }
+               public function ChangableBoxUpdate(Request $request,$id)
+               {
+                 
+                   $data = array();
+                   $data['title'] = $request->title ?? "";
+                   $data['content'] = $request->content ?? "";
+                   $data['type'] = $request->type ?? "";
+                   $data['status'] = $request->status ?? "";
+       
+                   $tpPackag = DB::table('changable_box')
+                               ->where('id',$id)
+                               ->update($data);
+                    return redirect()->route('list__changeable_box')->with('success','Content update successfully'); 
+               }
 
 
 

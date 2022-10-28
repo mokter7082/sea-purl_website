@@ -94,6 +94,12 @@ Route::post('/admin-login',[DashboardController::class,'adminDashboard'])->name(
          Route::get('/list-tour-cruise-4', [WebsiteContentController::class, 'listTPCruise4'])->name('list__t_p_cruise_4');
          Route::get('/list-tour-cruise-4-edit/{id}', [WebsiteContentController::class, 'TPCruise4Edit'])->name('t_p_cruise_4_edit');
          Route::post('/list-tour-cruise-4-update/{id}', [WebsiteContentController::class, 'TPCruise4Update'])->name('t_p_cruise_4_update');
+        //   changeable box data create
+           Route::get('/create-changable-box', [WebsiteContentController::class, 'createChangableBoxContent'])->name('create_changeable_box');
+           Route::post('/store-changable-box', [WebsiteContentController::class, 'storeChangableBox'])->name('store_changeable_box');
+           Route::get('/list-changable-box', [WebsiteContentController::class, 'listChangableBox'])->name('list__changeable_box');
+           Route::get('/list-changable-box-edit/{id}', [WebsiteContentController::class, 'ChangableBoxEdit'])->name('changeable_box_edit');
+           Route::post('/list-changable-box-update/{id}', [WebsiteContentController::class, 'ChangableBoxUpdate'])->name('changeable_box_update');
      
         // ADMIN DELETE ITEM ROUTE FROM HERE
         Route::get('/menu-delete/{id}', [MunuController::class, 'destroy'])->name('menu-delete');

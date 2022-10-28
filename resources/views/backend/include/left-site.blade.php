@@ -113,6 +113,13 @@
 
                         </ul>
                     </li>
+                    <li class="has-child-item close-item">
+                        <a><i class="fa fa-cubes" aria-hidden="true"></i><span>Changeable Box</span></a>
+                        <ul class="nav child-nav level-1">
+                            <li><a href="{{ route('create_changeable_box') }}">Create</a></li>
+                            <li><a href="{{ route('list__changeable_box') }}">View</a></li>
+                        </ul>
+                    </li>
                 @endif
                 <p class="tool_title">Website Users</p>
                 <li class="has-child-item close-item">
