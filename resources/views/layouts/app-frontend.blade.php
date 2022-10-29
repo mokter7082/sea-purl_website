@@ -88,23 +88,18 @@
         <div class="col-lg-6 text-center text-md-right">
             <ul class="nav d-inline-flex">
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Privacy Policy</a>
+                    <a class="nav-link text-white py-0" href="{{ URL::to('policy') }}">Privacy Policy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Terms & Conditions</a>
+                    <a class="nav-link text-white py-0" href="{{ URL::to('policy') }}">Terms & Conditions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Refund & Return Policy</a>
+                    <a class="nav-link text-white py-0" href="{{ URL::to('policy') }}">Refund & Return Policy</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 <!-- Footer End -->
-
-
-
-<!-- Back to Top -->
-{{-- <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a> --}}
 
 @include('frontend.include.footer')

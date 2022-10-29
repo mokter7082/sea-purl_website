@@ -144,6 +144,10 @@ class FrontendController extends Controller
            
     return view('frontend.single_page.tourist-attraction',compact('singleData'));
   }
+  public function Policy()
+  {
+   return view('frontend.single_page.policy');
+  }
     
    
  
